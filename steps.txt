@@ -1,2 +1,9 @@
 Древовидные категории в Django
 https://tretyakov.net/post/drevovidnye-kategorii-v-django/
+
+Создаем новую ветку
+-----
++ New branch
+пишем имя
+-----
+Создаём коммит
