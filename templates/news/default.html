@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>Пограничная ЦРБ</title>
+    {% load static %}
+
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="{% static 'img/favicon.png' %}" rel="icon">
+    <link href="{% static 'img/apple-touch-icon.png' %}" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+          rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="{% static 'vendor/fontawesome-free/css/all.min.css' %}" rel="stylesheet">
+    <link href="{% static 'vendor/animate.css/animate.min.css' %}" rel="stylesheet">
+    <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+    <link href="{% static 'vendor/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
+    <link href="{% static 'vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+    <link href="{% static 'vendor/remixicon/remixicon.css' %}" rel="stylesheet">
+    <link href="{% static 'vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="{% static 'css/style.css' %}" rel="stylesheet">
+
+</head>
+
+<body>
+
+<!-- ======= Top Bar ======= -->
+<div id="topbar" class="d-flex align-items-center fixed-top">
+    <div class="container d-flex justify-content-between">
+        <div class="contact-info d-flex align-items-center">
+            <i class="bi bi-envelope"></i> <a href="mailto:contact@example.com">pograncrb@mail.ru</a>
+            <i class="bi bi-phone"></i> +7 902 064 08 76
+        </div>
+        <div class="d-none d-lg-flex social-links align-items-center">
+            <a href="https://vk.com/public217482277"><img src="{% static 'img/vk.png' %}" alt="" width="16" height="16"></a>
+            <a href="https://ok.ru/group/70000001391344"><img src="{% static 'img/ok_sm.svg' %}" alt="" width="16"
+                                                              height="16"></a>
+            <a href="https://t.me/pograncrb" class="telegram"><i class="bi bi-telegram"></i></a>
+        </div>
+    </div>
+</div>
+
+<!-- ======= Header ======= -->
+<header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center">
+
+        <a href="#" class="logo me-auto"><img src="{% static 'img/logo.png' %}" alt="" class="img-fluid"></a>
+        <h1 class="logo me-auto"><a href="https://pograncrb.ru">КГБУЗ Пограничная ЦРБ</a></h1>
+
+        <nav id="navbar" class="navbar order-last order-lg-0">
+            <ul>
+                <li><a class="nav-link scrollto " href="/">Главная</a></li>
+                <li class="dropdown"><a href="#"><span>Меню</span> <i class="bi bi-chevron-down"></i></a>
+                    <ul>
+                        <li class="dropdown"><a href="#"><span>Пациентам</span> <i class="bi bi-chevron-right"></i></a>
+                            <ul>
+                                <li><a href="#">Порядок госпит. и маршр. пац.</a></li>
+                                <li><a href="#">ТПГГ</a></li>
+                                <li><a href="#">Диспансеризация и проф.</a></li>
+                                <li><a href="#">Подготовка к исследованиям</a></li>
+                                <li><a href="#">Лекарственное обеспечение</a></li>
+                                <li><a href="#">Внеочер. оказание мед.пом.</a></li>
+                                <li><a href="#">Специалисты</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown"><a href="#"><span>Профилактика</span> <i
+                                class="bi bi-chevron-right"></i></a>
+                            <ul>
+                                <li><a href="#">Профилактический мед. осмотр</a></li>
+                                <li><a href="#">Диспансеризация</a></li>
+                                <li><a href="#">Вакцинопрофилактика</a></li>
+                                <li><a href="#">Диспансерное наблюдение</a></li>
+                                <li><a href="#">Школы здоровья</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown"><a href="#"><span>Отзывы и обращения</span> <i
+                                class="bi bi-chevron-right"></i></a>
+                            <ul>
+                                <li><a href="#">Оставить отзыв</a></li>
+                                <li><a href="#">Задать вопрос</a></li>
+                                <li><a href="#">Часто задаваемые вопросы</a></li>
+                                <li><a href="#">Вышестоящие органы</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown"><a href="#"><span>Платные услуги</span> <i class="bi bi-chevron-right"></i></a>
+                            <ul>
+                                <li><a href="#">Положение о ПМУ</a></li>
+                                <li><a href="#">Прейскурант</a></li>
+                                <li><a href="#">График и часы амб. приёма</a></li>
+                                <li><a href="#">Образец договора ПМУ</a></li>
+                                <li><a href="#">Правила представления ПМУ</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown"><a href="#"><span>Показатели работы</span> <i
+                                class="bi bi-chevron-right"></i></a>
+                            <ul>
+                                <li><a href="#">Аналитические отчеты</a></li>
+                                <li><a href="#">Доступность и качество</a></li>
+                                <li><a href="#">Показатели эффективности</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown"><a href="#"><span>Прочее</span> <i class="bi bi-chevron-right"></i></a>
+                            <ul>
+                                <li><a href="#">Вакансии</a></li>
+                                <li><a href="#">Целевое обеспечение</a></li>
+                                <li><a href="#">Льготы и гарантии для мед.раб.</a></li>
+                                <li><a href="#">Профсоюз</a></li>
+                                <li><a href="#">Волонтёры</a></li>
+                                <li><a href="#">Антикоррупционная политика</a></li>
+                                <li><a href="#">Обработка персональных</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown"><a href="#"><span>Об организации</span> <i class="bi bi-chevron-right"></i></a>
+                            <ul>
+                                <li><a href="#">Общая информация</a></li>
+                                <li><a href="#">Контакты</a></li>
+                                <li><a href="#">Как добраться</a></li>
+                                <li><a href="#">Структура</a></li>
+                                <li><a href="#">Органы управления</a></li>
+                                <li><a href="#">Направления</a></li>
+                                <li><a href="#">Новости (СМИ о нас)</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown"><a href="#"><span>Запись к врачу</span> <i class="bi bi-chevron-down"></i></a>
+                    <ul>
+                        <li class="dropdown"><a href="#"><span>Записаться онлайн</span> <i
+                                class="bi bi-chevron-right"></i></a>
+                            <ul>
+                                <li><a href="https://www.gosuslugi.ru/">Единый портал государственных услуг (ЕПГУ)</a>
+                                </li>
+                                <li><a href="https://er25.ru/">Единый региональный портал записи на приём к врачу (ЕР
+                                    25)</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Записаться по телефону</a></li>
+                        <li class="dropdown"><a href="#"><span>Записаться в поликлинике</span> <i
+                                class="bi bi-chevron-right"></i></a>
+                            <ul>
+                                <li><a href="#">Дежурный администратор</a></li>
+                                <li><a href="#">Инфомат</a></li>
+                                <li><a href="#">На приёме у врача</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a class="nav-link scrollto" href="#lic">Лицензии</a></li>
+                <li><a class="nav-link scrollto" href="#contact">Контакты</a></li>
+                <li class="nav-item"><a class="nav-link" href="/about/">О нас</a></li>
+                {% if user.is_authenticated %}
+                    <li class="nav-item"><a class="nav-link" href="/category/">Категории</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button"
+                           data-bs-toggle="dropdown" aria-expanded="false"><span> {{ user.username }} </span></a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                            {% if user.is_staff %}
+                                <li><a class="dropdown-item" href="/admin/">Админ панель</a></li>
+                            {% endif %}
+                            <li><a class="dropdown-item" href="/profile/{{ user.id }}">Профиль</a></li>
+                            {% if is_not_authors %}
+{#                                <li><a class="dropdown-item" href="/sign/upgrade/">Хочу стать автором</a></li>#}
+                                <li><a class="dropdown-item" href="/news/create/">Добавить пост</a></li>
+                            {% endif %}
+                            <li>
+                                <hr class="dropdown-divider"/>
+                            </li>
+                            <li><a class="dropdown-item" href="/accounts/logout/">Выйти</a></li>
+                        </ul>
+                    </li>
+                {% else %}
+                    <li class="nav-item"><a class="nav-link" href="/accounts/login/">Войти</a></li>
+                {% endif %}
+
+            </ul>
+            <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav><!-- .navbar -->
+
+        {#        <a href="https://er25.ru" class="appointment-btn scrollto"><span class="d-none d-md-inline">Записаться</span>#}
+        {#            на приём</a>#}
+
+    </div>
+</header><!-- End Header -->
+
+<main id="main">
+
+    <!-- ======= Breadcrumbs Section ======= -->
+    <section class="breadcrumbs">
+        <div class="container">
+
+            <div class="d-flex justify-content-between align-items-center">
+                <h2>Внутренняя страница</h2>
+                <ol>
+                    <li><a href="/">Главная</a></li>
+                    <li>Внутренняя страница</li>
+                </ol>
+            </div>
+
+        </div>
+    </section><!-- End Breadcrumbs Section -->
+
+    <section class="inner-page">
+        <div class="container">
+            {% block content %}
+                {{ flatpage.content }}
+            {% endblock content %}
+        </div>
+    </section>
+
+</main><!-- End #main -->
+
+<!-- ======= Footer ======= -->
+<footer id="footer">
+
+    <div class="footer-top">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-3 col-md-6 footer-contact">
+                    <h3>КГБУЗ <br> Пограничная ЦРБ</h3>
+                    <p>
+                        Приморский край<br>
+                        пгт. Пограничный<br>
+                        ул. Пирогова, д.2<br><br>
+                        <strong>Телефон:</strong> +7 (42345) 21-2-45<br>
+                        <strong>Email:</strong> pograncrb@mail.ru<br>
+                    </p>
+                </div>
+
+                <div class="col-lg-2 col-md-6 footer-links">
+                    <h4>Полезные ссылки</h4>
+                    <ul>
+                        <li><i class="bx bx-chevron-right"></i> <a href="#">Новости</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="#">О нас</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="#">Услуги</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="#">Наша команда</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="#">Политика конфиденциальности</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6 footer-links">
+                    <h4>Сервисы</h4>
+                    <ul>
+                        <li><i class="bx bx-chevron-right"></i> <a href="#">Для пациента</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="#">Платные услуги</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="#">Отзывы и обращения</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="#">Вакансии</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="#">Льготы и гарантии для мед.раб.</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-4 col-md-6 footer-newsletter">
+                    <h4>Подпишитесь на нашу рассылку</h4>
+                    <p>Укажите свою почту и мы будем сообщать вам о новых публикациях.</p>
+                    <form action="" method="post">
+                        <input type="email" name="email"><input type="submit" value="Подписаться">
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container d-md-flex py-4">
+
+        <div class="me-md-auto text-center text-md-start">
+            <div class="copyright">
+                &copy; Copyright <strong><span>Евгений Безюк</span></strong>.
+            </div>
+            <div class="credits">
+                Дизайн <a href="https://bootstrapmade.com/">Jed</a>
+            </div>
+        </div>
+        <div class="social-links text-center text-md-right pt-3 pt-md-0">
+            <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+            <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+            <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+            <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+            <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+        </div>
+    </div>
+</footer><!-- End Footer -->
+
+<div id="preloader"></div>
+<a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+        class="bi bi-arrow-up-short"></i></a>
+
+<!-- Vendor JS Files -->
+<script src="{% static 'vendor/purecounter/purecounter_vanilla.js' %}"></script>
+<script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+<script src="{% static 'vendor/glightbox/js/glightbox.min.js' %}"></script>
+<script src="{% static 'vendor/swiper/swiper-bundle.min.js' %}"></script>
+<script src="{% static 'vendor/php-email-form/validate.js' %}"></script>
+
+<!-- Template Main JS File -->
+<script src="{% static 'js/main.js' %}"></script>
+
+</body>
+
+</html>
