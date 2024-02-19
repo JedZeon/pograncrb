@@ -9,7 +9,7 @@ from mptt.models import MPTTModel, TreeForeignKey
 class Post(models.Model):
     title = models.CharField(max_length=100, verbose_name='Заголовок')
     slug = models.SlugField(max_length=150)
-    author = models.ForeignKey(User, on_delete=models.CASCADE)
+    author = models.ForeignKey(User, on_delete=models.CASCADE, verbose_name='Автор')
     content = models.TextField(verbose_name='Содержание')
     categories = models.ManyToManyField('Category', through='PostCategory', verbose_name='Категории (несколько)')
     date_time = models.DateField(verbose_name='Создан')
@@ -57,6 +57,10 @@ class PostCategory(models.Model):
 class Author(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)
     rating = models.IntegerField(default=0)
+
+    class Meta:
+        verbose_name = "Автор"
+        verbose_name_plural = "Авторы"
 
     def __str__(self):
         return self.user
