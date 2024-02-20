@@ -20,3 +20,11 @@ https://tretyakov.net/post/drevovidnye-kategorii-v-django/
  Update project
 
  Локальную ветку ПКМ - Delete
+
+
+-----
+Для работы с изображениями
+pip install Pillow
+ ------
+ Добавление CKEditor
+ pip install django-ckeditor

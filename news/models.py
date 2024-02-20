@@ -3,7 +3,7 @@ from django.db.models import Sum
 from django.contrib.auth.models import User
 from django.urls import reverse
 from django.core.cache import cache
-from mptt.models import MPTTModel, TreeForeignKey
+from mptt.models import MPTTModel, TreeForeignKey, TreeManyToManyField
 
 
 class Post(models.Model):
@@ -11,14 +11,14 @@ class Post(models.Model):
     slug = models.SlugField(max_length=150)
     author = models.ForeignKey(User, on_delete=models.CASCADE, verbose_name='Автор')
     content = models.TextField(verbose_name='Содержание')
-    categories = models.ManyToManyField('Category', through='PostCategory', verbose_name='Категории (несколько)')
-    date_time = models.DateField(verbose_name='Создан')
+    # categories = models.ManyToManyField('Category', through='PostCategory', verbose_name='Категории (несколько)',
+    #                                     null=True)
+    categories = TreeManyToManyField('Category', verbose_name='Категории', through='PostCategory', related_name='posts')
+    date_time = models.DateField(verbose_name='Создан', auto_now_add=True)
     likes = models.IntegerField(default=0, verbose_name='+')
     dislikes = models.IntegerField(default=0, verbose_name='-')
     rating = models.FloatField(default=0, verbose_name='рейтинг')
-
-    # img = models.ImageField(upload_to='')
-    # pdf = models.FileField(upload_to='')
+    image = models.ImageField(upload_to='posts/%Y-%m-%d/', verbose_name='Изображение', blank=True, null=True)
 
     class Meta:
         ordering = ('-date_time',)
