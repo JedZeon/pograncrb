@@ -51,6 +51,12 @@ class PostDetail(DetailView):
 
         return obj
 
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['is_not_authors'] = not self.request.user.groups.filter(name='authors').exists()
+        context['is_authors'] = not context['is_not_authors']
+        return context
+
 
 class PostSearch(PostList):
     template_name = 'news/search.html'

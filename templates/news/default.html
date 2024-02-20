@@ -171,7 +171,7 @@
                             {% endif %}
                             <li><a class="dropdown-item" href="/profile/{{ user.id }}">Профиль</a></li>
                             {% if is_not_authors %}
-{#                                <li><a class="dropdown-item" href="/sign/upgrade/">Хочу стать автором</a></li>#}
+                                {#                                <li><a class="dropdown-item" href="/sign/upgrade/">Хочу стать автором</a></li>#}
                                 <li><a class="dropdown-item" href="/news/create/">Добавить пост</a></li>
                             {% endif %}
                             <li>
@@ -187,10 +187,6 @@
             </ul>
             <i class="bi bi-list mobile-nav-toggle"></i>
         </nav><!-- .navbar -->
-
-        {#        <a href="https://er25.ru" class="appointment-btn scrollto"><span class="d-none d-md-inline">Записаться</span>#}
-        {#            на приём</a>#}
-
     </div>
 </header><!-- End Header -->
 
@@ -218,7 +214,6 @@
             {% endblock content %}
         </div>
     </section>
-
 </main><!-- End #main -->
 
 <!-- ======= Footer ======= -->
